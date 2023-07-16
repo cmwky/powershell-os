@@ -34,4 +34,4 @@ function Convert-GeohashToLatLng {
 }
 
 # Call the function
-Convert-GeohashToLatLng -geohash "dngbmjzg"
+Convert-GeohashToLatLng -geohash "u09tunquc9zh"
