@@ -15,3 +15,10 @@
 
 - [Reference](https://learn.microsoft.com/en-us/rest/api/azure/)
 - Fetches an OAuth2 token from Azure REST API.
+
+## unusedazureresources.ps1
+
+- Reports empty resources for:
+  - SQL Dbs
+  - App Service Plans
+- User must already be logged in to Azure.
