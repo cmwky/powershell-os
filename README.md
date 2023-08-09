@@ -1,21 +1,17 @@
+# powershell-os  
 *This repo contains an assortment of PowerShell scripts.*
-
-<br>
 
 ## geohash.ps1
 
-[Background Info](https://en.wikipedia.org/wiki/Geohash)
-
-Converts a geohash to latitude / longitude pair.
-
-
----
+- [Background Info](https://en.wikipedia.org/wiki/Geohash)
+- Converts a geohash to latitude / longitude pair.
 
 ## haversinedistance.ps1
 
-[Background Info](https://www.igismap.com/haversine-formula-calculate-geographic-distance-earth/)
+- [Background Info](https://www.igismap.com/haversine-formula-calculate-geographic-distance-earth/)
+- Given two pairs of latitude / longitude values, calculates the geographic distance between them.
 
-Given two pairs of latitude / longitude values, calculates the geographic distance between them.
+## azureoauth2.ps1
 
----
-
+- [Reference](https://learn.microsoft.com/en-us/rest/api/azure/)
+- Fetches an OAuth2 token from Azure REST API.
