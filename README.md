@@ -22,3 +22,7 @@
   - SQL Dbs
   - App Service Plans
 - User must already be logged in to Azure.
+
+## filetoazurestoragecontainer.ps1
+
+- Sends a file to a storage container using access key.
