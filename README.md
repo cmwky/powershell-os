@@ -68,7 +68,39 @@ demoEnvironment/
 
 ### azureoauth2.ps1
 
-*Fetches an OAuth2 token from Azure REST API.*
+`Get-AzureBearerToken` is a PowerShell function to fetch an Azure bearer token using client credentials.
+
+## Parameters
+
+- **tenantId**: Your Azure AD tenant ID.
+- **clientId**: Azure AD application ID.
+- **clientSecret**: Secret key of the Azure AD application.
+- **resource**: Target Azure service (Default: `https://management.azure.com/`).
+
+## Returns
+
+1. Bearer token.
+2. Token expiration time (ticks).
+
+## Usage
+
+```powershell
+$variables = @{
+    "bearerToken" = $null
+    "bearerTokenExpiresOn" = 0
+    "tenantId" = "TENANT_ID_HERE"
+    "clientId" = "CLIENT_ID_HERE"
+    "clientSecret" = "SECRET_HERE"
+    "resource" = "https://management.azure.com/"
+}
+
+$token, $expiresOn = Get-AzureBearerToken @variables
+
+$variables["bearerToken"] = $token
+$variables["bearerTokenExpiresOn"] = $expiresOn
+```
+
+**Note**: Ensure the Azure AD app has required permissions for the targeted service.
 
 [Reference](https://learn.microsoft.com/en-us/rest/api/azure/)
 
