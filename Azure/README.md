@@ -26,7 +26,10 @@ $variables = @{
     "resource" = "https://management.azure.com/"
 }
 
-$token, $expiresOn = Get-AzureBearerToken @variables
+$token, $expiresOn = Get-AzureBearerToken -tenantId $variables["tenantId"] `
+                                          -clientId $variables["clientId"] `
+                                          -clientSecret $variables["clientSecret"] `
+                                          -resource $variables["resource"]
 
 $variables["bearerToken"] = $token
 $variables["bearerTokenExpiresOn"] = $expiresOn
