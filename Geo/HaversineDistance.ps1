@@ -17,15 +17,3 @@ function Get-HaversineDistance($lat1, $long1, $lat2, $long2) {
 
     return $earthRadius * $c
 }
-
-#Eiffel Tower
-$lat1 = 48.8584
-$long1 = 2.2945
-
-#Statue of Liberty
-$lat2 = 40.6892
-$long2 = 74.0445
-
-$distance = Get-HaversineDistance $lat1 $long1 $lat2 $long2
-
-Write-Output "The distance between the two points is $($distance) miles."

@@ -32,6 +32,3 @@ function Convert-GeohashToLatLng {
     }
     return @( (($lat[0] + $lat[1]) / 2), (($lon[0] + $lon[1]) / 2 ))
 }
-
-# Call the function
-Convert-GeohashToLatLng -geohash "u09tunquc9zh"
