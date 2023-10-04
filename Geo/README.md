@@ -17,6 +17,20 @@ A PowerShell script to convert Geohashes into Latitude and Longitude.
 
 ---
 
+# Script: GpxToLatLong
+
+This script is designed to extract latitude and longitude pairs from a GPX file and save them to a `.txt` file.
+
+## Usage
+
+You can use the `ExtractGPXLatLong` function to process a GPX file:
+
+```powershell
+ExtractGPXLatLong -filePath "path_to_your_gpx_file.gpx"
+```
+
+---
+
 # Script: HaversineDistance
 
 A PowerShell script to calculate the distance between two points on Earth using latitude and longitude.
