@@ -1,3 +1,15 @@
+# Script: QifToCsv
+
+This script converts a QIF (Quicken Interchange Format) file to CSV. It was created to assist in exporting personal financial records out of Microsoft Money '97 into more modern software.
+
+## Usage
+
+   ```powershell
+   Convert-QIFtoCSV -QifFilePath "C:\path\to\your\input.qif" -CsvFilePath "C:\path\to\your\output.csv"
+   ```
+
+---
+
 # Script: RepoStructureDocumentation
 
 A script to recursively display the structure of a directory in a tree format using PowerShell.
